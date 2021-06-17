@@ -17,7 +17,7 @@ class Employee:
             return False
 
     def calculate_monthly_wage(self):
-
+        emp_details ={}
         emp_wage = 0
         count = 0
         while True:
@@ -37,14 +37,43 @@ class Employee:
                 emp_wage += emp_hrs * rate_per_hrs
             else:
                 print("employee is absent at day:"+str(count))
-        print("total monthly wage "+str(emp_wage))
+        emp_details['name'] = self.emp_name
+        emp_details['emp_id'] = self.emp_id
+        emp_details['department'] = self.department
+        emp_details['wage'] = emp_wage
+        return emp_details
+
+
+class Company:
+    def __init__(self, company_name, company_id, company_type):
+        self.company_name = company_name
+        self.company_id = company_id
+        self.company_type = company_type
+
+    def returns_emp_details(self):
+        emp_details_count = 0
+        company_emp_details = {}
+        emp_details = []
+        number_of_emp = int(input("enter the number of employee u want to store"))
+        company_emp_details['company_name'] = self.company_name
+        company_emp_details['company_id'] = self.company_id
+        company_emp_details['company_type'] = self.company_type
+        for i in range(0, number_of_emp):
+            work_type_input = input("enter '1' if full_time else '2' for part_time ")
+            emp_name_input = input("enter the employee name")
+            employee = Employee(emp_name_input, 1, "IT", int(work_type_input), 1)
+            emp_details = employee.calculate_monthly_wage()
+            emp_details_count += 1
+            company_emp_details['emp_details'+str(emp_details_count)] = emp_details
+        return company_emp_details
 
 
 def main():
     print("welcome to employee wage computation")
-    work_type_input = input("enter '1' if full_time else '2' for part_time ")
-    employee = Employee("Andra", 1, "IT", int(work_type_input), 1)
-    employee.calculate_monthly_wage()
+    company_ob = Company("jio", 1, "IT")
+    final_result = company_ob.returns_emp_details()
+    for i in final_result:
+        print(i+final_result.get(i))
 
 
 if __name__ == '__main__':
