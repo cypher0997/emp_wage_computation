@@ -52,8 +52,8 @@ class Company:
 
     def returns_emp_details(self):
         emp_details_count = 0
+        emp_id_count = 0
         company_emp_details = {}
-        emp_details = []
         number_of_emp = int(input("enter the number of employee u want to store"))
         company_emp_details['company_name'] = self.company_name
         company_emp_details['company_id'] = self.company_id
@@ -61,7 +61,8 @@ class Company:
         for i in range(0, number_of_emp):
             work_type_input = input("enter '1' if full_time else '2' for part_time ")
             emp_name_input = input("enter the employee name")
-            employee = Employee(emp_name_input, 1, "IT", int(work_type_input), 1)
+            emp_id_count += 1
+            employee = Employee(emp_name_input, emp_id_count, "IT", int(work_type_input), 1)
             emp_details = employee.calculate_monthly_wage()
             emp_details_count += 1
             company_emp_details['emp_details'+str(emp_details_count)] = emp_details
@@ -69,11 +70,19 @@ class Company:
 
 
 def main():
+    company_list = []
+    company_id_count = 0
+    final_result = {}
     print("welcome to employee wage computation")
-    company_ob = Company("jio", 1, "IT")
-    final_result = company_ob.returns_emp_details()
-    for i in final_result:
-        print(i+final_result.get(i))
+    number_of_companies = int(input("enter the number of companies u want to store"))
+    for i in range(0,number_of_companies):
+        company_name_input = input("enter the company name")
+        company_id_count += 1
+        company_ob = Company(company_name_input, company_id_count, "IT")
+        final_result = company_ob.returns_emp_details()
+        company_list.append(final_result)
+    for i in company_list:
+        print(i)
 
 
 if __name__ == '__main__':
