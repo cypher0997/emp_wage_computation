@@ -16,29 +16,35 @@ class Employee:
         else:
             return False
 
-    def calculate_daily_wage(self):
-        status = self.check_emp_present_or_absent()
-        if status:
-            emp_hrs = 0
-            emp_wage = 0
-            rate_per_hrs = 20
-            if self.work_type == 1:
-                emp_hrs = 8
-            elif self.work_type == 2:
-                emp_hrs = 4
-            else:
+    def calculate_monthly_wage(self):
+
+        emp_wage = 0
+        count = 0
+        while True:
+            count += 1
+            if count == 20:
+                break
+            status = self.check_emp_present_or_absent()
+            if status:
                 emp_hrs = 0
-            emp_wage = emp_hrs * rate_per_hrs
-            print("daily Wage"+" "+str(emp_wage))
-        else:
-            print("employee is absent")
+                rate_per_hrs = 20
+                if self.work_type == 1:
+                    emp_hrs = 8
+                elif self.work_type == 2:
+                    emp_hrs = 4
+                else:
+                    emp_hrs = 0
+                emp_wage += emp_hrs * rate_per_hrs
+            else:
+                print("employee is absent at day:"+str(count))
+        print("total monthly wage "+str(emp_wage))
 
 
 def main():
     print("welcome to employee wage computation")
     work_type_input = input("enter '1' if full_time else '2' for part_time ")
     employee = Employee("Andra", 1, "IT", int(work_type_input), 1)
-    employee.calculate_daily_wage()
+    employee.calculate_monthly_wage()
 
 
 if __name__ == '__main__':
