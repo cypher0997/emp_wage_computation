@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e8af913-1d5f-47ef-ae59-882b20185422" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/company.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/employee.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/employee_wage_builder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/employee_wage_exception.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emp_wage_computation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/employee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_wage_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/employee_wage_builder.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +152,9 @@
       <workItem from="1623986641172" duration="4420000" />
       <workItem from="1624012296533" duration="2589000" />
       <workItem from="1624019423280" duration="208000" />
-      <workItem from="1624020645093" duration="10009000" />
+      <workItem from="1624020645093" duration="10272000" />
+      <workItem from="1624080772011" duration="605000" />
+      <workItem from="1624097871461" duration="1577000" />
     </task>
     <servers />
   </component>
@@ -164,26 +162,31 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1623938455013">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="461" y="139" key="FileChooserDialogImpl" timestamp="1624082290285">
+      <screen x="0" y="0" width="1360" height="768" />
     </state>
+    <state x="461" y="139" key="FileChooserDialogImpl/0.0.1360.768@0.0.1360.768" timestamp="1624082290285" />
     <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1623938455013" />
-    <state width="1322" height="192" key="GridCell.Tab.0.bottom" timestamp="1624031454344">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1316" height="192" key="GridCell.Tab.0.bottom" timestamp="1624100992602">
+      <screen x="0" y="0" width="1360" height="768" />
     </state>
-    <state width="1322" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1624031454344" />
-    <state width="1322" height="192" key="GridCell.Tab.0.center" timestamp="1624031454344">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1316" height="192" key="GridCell.Tab.0.bottom/0.0.1360.768@0.0.1360.768" timestamp="1624100992602" />
+    <state width="1322" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1624032199263" />
+    <state width="1316" height="192" key="GridCell.Tab.0.center" timestamp="1624100992602">
+      <screen x="0" y="0" width="1360" height="768" />
     </state>
-    <state width="1322" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1624031454344" />
-    <state width="1322" height="192" key="GridCell.Tab.0.left" timestamp="1624031454344">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1316" height="192" key="GridCell.Tab.0.center/0.0.1360.768@0.0.1360.768" timestamp="1624100992602" />
+    <state width="1322" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1624032199263" />
+    <state width="1316" height="192" key="GridCell.Tab.0.left" timestamp="1624100992602">
+      <screen x="0" y="0" width="1360" height="768" />
     </state>
-    <state width="1322" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1624031454344" />
-    <state width="1322" height="192" key="GridCell.Tab.0.right" timestamp="1624031454344">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1316" height="192" key="GridCell.Tab.0.left/0.0.1360.768@0.0.1360.768" timestamp="1624100992602" />
+    <state width="1322" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1624032199262" />
+    <state width="1316" height="192" key="GridCell.Tab.0.right" timestamp="1624100992602">
+      <screen x="0" y="0" width="1360" height="768" />
     </state>
-    <state width="1322" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1624031454344" />
+    <state width="1316" height="192" key="GridCell.Tab.0.right/0.0.1360.768@0.0.1360.768" timestamp="1624100992602" />
+    <state width="1322" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1624032199263" />
     <state width="1322" height="239" key="GridCell.Tab.1.bottom" timestamp="1623949300530">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -204,13 +207,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1624021155505" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1624020671291">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="377" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1624082276045">
+      <screen x="0" y="0" width="1360" height="768" />
     </state>
+    <state x="377" y="208" key="com.intellij.ide.util.TipDialog/0.0.1360.768@0.0.1360.768" timestamp="1624082276045" />
     <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1624020671291" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/emp_wage_comp$main.coverage" NAME="main Coverage Results" MODIFIED="1624031385157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/emp_wage_comp$main.coverage" NAME="main Coverage Results" MODIFIED="1624100978507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/emp_wage_comp$employee__1_.coverage" NAME="employee (1) Coverage Results" MODIFIED="1624028695401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/emp_wage_comp$emp_wage_comp.coverage" NAME="emp_wage_computation Coverage Results" MODIFIED="1623943043345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/emp_wage_comp$emp_wage_computation.coverage" NAME="employee Coverage Results" MODIFIED="1624026513311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

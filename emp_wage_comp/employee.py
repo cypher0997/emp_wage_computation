@@ -55,11 +55,7 @@ class Employee:
         """
         count = 0
         emp_wage = 0
-        emp_details = {
-            'name': self.emp_name,
-            'emp_id': self.emp_id,
-            'department': self.department,
-            }
+        emp_details = {'name': self.emp_name, 'emp_id': self.emp_id, 'department': self.department}
         emp_monthly_wage = EmployeeWageBuilder()
         while True:
             count += 1
